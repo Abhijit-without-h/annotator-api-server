@@ -4,7 +4,10 @@ import os
 import uuid
 import base64
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 DATABASE = 'json_data.db'
 AUDIO_DIR = 'audio_files'
 
